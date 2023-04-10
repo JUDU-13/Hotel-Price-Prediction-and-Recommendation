@@ -1,0 +1,167 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="923,1406" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="616,1341" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="loc" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="554,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter Location Name:" Title="Enter place">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[loc]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: MakeMyTrip.com: Save upto 60% on Hotel Booking 4,442,00+ Hotels Worldwide" sap:VirtualizedContainerService.HintSize="554,951" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="30941ec3-9065-4f21-951d-35dbb8ba17a8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,734" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Q Enter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="30941ec3-9065-4f21-951d-35dbb8ba17a8" Text="[loc]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.makemytrip.com/hotels/" CvTextArgument="Q Enter city/ Hotel/ Area/ Building" CvType="Text" DesignTimeRectangle="389, 412, 253, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Q Enter'" Guid="89d7ed7b-4ebb-4258-b649-aeb9f4015799" InformativeScreenshot="805217e7f27d6f475d5b6cbc1afdf280.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MakeMyTrip.com: Save upto 60% on Hotel Booking 4,442,00+ Hotels Worldwide' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="30941ec3-9065-4f21-951d-35dbb8ba17a8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.makemytrip.com/hotels/" CvElementArea="848, 490, 222, 49" CvTextArea="911, 503, 96, 23" CvTextArgument="SEARCH" CvType="Button" DesignTimeRectangle="852, 493, 216, 44" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl id='hsw_search_button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='hsw_search_button' tag='BUTTON' type='button' class='primaryBtn font24 latoBold widgetSearchBtn' aaname='Search' check:innerText='SEARCH' /&gt;" Guid="edb859ff-7ee1-41b0-91e1-0f4c90cf0f21" ImageBase64="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" InformativeScreenshot="e054ec48342ac08f1abe55bb529fa58c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MakeMyTrip.com: Save upto 60% on Hotel Booking 4,442,00+ Hotels Worldwide' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData ExtractDataSettings="{x:Null}" AppendResults="False" DisplayName="Extract Table Data" sap:VirtualizedContainerService.HintSize="388,164" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a95c6858a415d14a39c3ae0a2c49e887.jpg" Selector="&lt;html app='chrome.exe' title='MakeMyTrip.com: Save upto 60% on Hotel Booking 4,442,00+ Hotels Worldwide' /&gt;" Title="Delhi Hotels, resorts, homestays and more | MakeMytrip.com" Url="https://www.makemytrip.com/hotels/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
